@@ -40,7 +40,7 @@ class CAP(Resource):
           args = ''
 
         print(capability + ' ' + command + ' ' + args)
-        process = subprocess.run(['weboob',capability,command,args,'-f','json'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        process = subprocess.run(['boo'+capability,command,args,'-n','10000','-f','json'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         stdout = process.stdout.decode('UTF-8')
         return stdout
 
