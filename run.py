@@ -1,6 +1,5 @@
 from flask import Flask, request
 from flask_restplus import Resource, Api
-from sqlalchemy import create_engine
 from json import dumps
 from flask_jsonpify import jsonify
 from flask_httpauth import HTTPBasicAuth
