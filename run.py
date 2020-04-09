@@ -1,5 +1,5 @@
 from flask import Flask, request
-from flask_restplus import Resource, Api
+from flask_restx import Resource, Api
 from json import dumps
 from flask_jsonpify import jsonify
 from flask_httpauth import HTTPBasicAuth
